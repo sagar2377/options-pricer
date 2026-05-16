@@ -32,3 +32,15 @@ With S=100, K=100, T=1, r=0.05, σ=0.2:
 ## Tech Stack
 - Python
 - NumPy, Matplotlib
+
+## Monte Carlo Pricing
+- Simulates 10,000 stock price paths using Geometric Brownian Motion
+- Calculates call/put payoffs across all paths and averages them
+- Discounts average payoff to present value using e^(-rT)
+- Converges to Black-Scholes price with enough simulations (100,000 paths gives ~10.47 vs BS 10.45)
+
+## Implied Volatility Solver
+- Takes a market option price as input
+- Uses Newton-Raphson method with Vega as the derivative to converge efficiently
+- Typically converges in 5-10 iterations
+- Example: implied_vol(10.45, 100, 100, 1, 0.05) → 0.1999 ≈ 0.2
