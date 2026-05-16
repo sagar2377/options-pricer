@@ -49,3 +49,4 @@ With S=100, K=100, T=1, r=0.05, σ=0.2:
 - Pulled real AAPL options chain data using yfinance
 - Calculated implied volatility across 6 expiry dates and strikes from $100-$300
 - Plotted 3D volatility surface showing both the volatility skew and term structure
+![Volatility Surface](vol_surface.png)
