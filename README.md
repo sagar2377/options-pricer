@@ -25,6 +25,8 @@ With S=100, K=100, T=1, r=0.05, σ=0.2:
 - Vega peaks at ATM where uncertainty and volatility sensitivity is highest
 - Theta is most negative at ATM where time value is highest
 - Rho keeps increasing with stock price unlike other Greeks — deeper ITM means more certain to exercise
+- Monte Carlo converges to Black-Scholes price with enough simulations — demonstrates Law of Large Numbers in practice
+- Real AAPL vol surface shows volatility skew (implied vol decreases as strike increases) and term structure (shorter dated options have higher implied vol) — consistent with Hull chapter 19
 
 ## Greeks Dashboard
 ![Greeks Dashboard](greeks_dashboard.png)
@@ -32,6 +34,9 @@ With S=100, K=100, T=1, r=0.05, σ=0.2:
 ## Tech Stack
 - Python
 - NumPy, Matplotlib
+- pandas (data manipulation)
+- yfinance (real options market data)
+- mpl_toolkits (3D plotting)
 
 ## Monte Carlo Pricing
 - Simulates 10,000 stock price paths using Geometric Brownian Motion
