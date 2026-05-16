@@ -44,3 +44,8 @@ With S=100, K=100, T=1, r=0.05, σ=0.2:
 - Uses Newton-Raphson method with Vega as the derivative to converge efficiently
 - Typically converges in 5-10 iterations
 - Example: implied_vol(10.45, 100, 100, 1, 0.05) → 0.1999 ≈ 0.2
+
+## Volatility Surface
+- Pulled real AAPL options chain data using yfinance
+- Calculated implied volatility across 6 expiry dates and strikes from $100-$300
+- Plotted 3D volatility surface showing both the volatility skew and term structure
