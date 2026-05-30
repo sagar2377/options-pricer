@@ -62,3 +62,10 @@ With S=100, K=100, T=1, r=0.05, σ=0.2:
 - P&L stays close to 0 throughout showing hedge is working — residual risk is Gamma P&L from discrete rebalancing
 - Market maker keeps most of the $10.45 premium collected at the start
 -![Delta Hedging](delta_hedging.png)
+
+## Vol Breakout Strategy
+- Calculates AAPL implied volatility daily using our own implied vol solver on real options data
+- Compares to 20-day historical volatility
+- Buys when IV > 1.5 × HV (vol breakout signal) and sells when IV normalises
+- Executes trades automatically via Alpaca paper trading API
+- Currently running on $100,000 paper trading account
