@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+seaborn
+streamlit
+yfinance
+alpaca-trade-api
+pandas
