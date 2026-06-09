@@ -64,6 +64,18 @@ With S=100, K=100, T=1, r=0.05, σ=0.2:
 - Executes trades automatically via Alpaca paper trading API
 - Currently running on $100,000 paper trading account
 
+## Live Demo
+🚀 [View the live app here](https://anshul-options-pricer.streamlit.app)
+
+Features:
+- Real-time Black-Scholes call/put pricing
+- Monte Carlo price comparison
+- All 5 Greeks
+- Implied volatility calculator
+- Interactive call/put price heatmaps
+- Delta and Gamma heatmaps
+- P&L at expiry chart
+
 ## Tech Stack
 - Python
 - NumPy, SciPy, Matplotlib
